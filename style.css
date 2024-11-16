@@ -505,7 +505,7 @@ h3 {
 
 .lvp-floors {
     width: 100%;
-    max-width: 1147px;
+    max-width: 1098px;
     margin: auto;
     padding-top: 90px;
 }
@@ -515,7 +515,7 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
-    line-height: 28.22px;
+    line-height: 26.56px;
     color: #2F3E46;
 }
 
@@ -542,7 +542,7 @@ h3 {
     max-width: 1000px;
     height: 3px;
     background-color: #4C78BB;
-    margin: 72px auto;
+    margin: 81px auto 25px;
 }
 
 .blue-stripe-second {
@@ -617,7 +617,7 @@ h3 {
 /* Start wrapper-our-blog */
 
 .wrapper-our-blog {
-    max-width: 1440px;
+    max-width: 1318px;
     height: 530.84px;
     margin: auto;
     margin-top: 80px;
@@ -694,7 +694,7 @@ h3 {
 .hill {
     width: 100%;
     height: 49px;
-    margin: 40px 0 -5px -3px;
+    margin: 0 0 -5px -3px;
 }
 
 .hill img {
@@ -855,6 +855,73 @@ h3 {
 .hill-top img {
     width: 100%;
     height: 49px;
+}
+
+.wrapper-evaluation-online {
+    width: 100%;
+    height: 585px;
+    background-color: #EBF0F1;
+    margin-top: 30px;
+}
+
+.wrapper-big-cities p {
+    text-transform: uppercase;
+}
+
+.evaluation-online {
+    width: 100%;
+    max-width: 1098px;
+    height: 450px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.evaluation-online h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #043F45;
+}
+
+.evaluation-online h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    color: #043F45;
+}
+
+.evaluation-online p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 28.22px;
+    padding-top: 11px;
+    color: #2F3E46;
+}
+
+.wrapper-big-cities {
+    width: 100%;
+    max-width: 915px;
+    height: 174px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.wrapper-big-cities p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    color: #4B4B4B;
+    padding: 0;
 }
 
 /* Start footer  */
@@ -1133,6 +1200,31 @@ h6 {
 
 /* Show the burger menu and mobile navigation on smaller screens */
 @media (max-width: 768px) {
+    .wrapper-evaluation-online {
+        height: auto;
+    }
+
+    .evaluation-online {
+        width: 100%;
+        height: auto;
+        padding-top: 25px;
+    }
+    .wrapper-big-cities{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .hill img{
+        width: auto;
+    }
+    .evaluation-online h2{
+        font-size: 32px;
+        line-height: normal;
+        line-height: 1.4;
+    }
     .first-menu {
         display: none;
     }
@@ -1181,12 +1273,86 @@ h6 {
     transition: background-color 0.3s ease;
 }
 
-.shop-lvp-calery {
-    height: 780px;
+.shop-lvp-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.shop-lvp-calery img {
-    gap: 20px;
+.shop-lvp-gallery a:nth-child(n+5):nth-child(-n+8) {
+    margin-top: 40px;
+}
+
+.shop-lvp-gallery a {
+    display: block;
+    overflow: hidden;
+}
+
+.shop-lvp-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 330px;
+    max-height: 330px;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    letter-spacing: -0.6px;
+}
+
+.icon-list li::before {
+    margin-right: 20px;
+    content: url('/images/Icon-location2.png');
+}
+
+.view-all {
+    width: 100%;
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.view-all p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #292929;
+}
+
+.view-all p::after {
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+    content: url('/images/Vector.png');
+    transform: scale(1.4);
+    display: inline-block;
+}
+.big-cities-left{
+    width: 50%;
+    border-right: 1px solid #84A7AA;
+}
+
+@media (max-width: 1024px) {
+    .brands {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1194,13 +1360,31 @@ h6 {
         height: auto;
         margin: 10px;
     }
-
-    .shop-lvp-calery {
-        height: auto;
-    }
-    .shop-lvp-calery img{
+    .big-cities-left{
         width: 100%;
     }
+    .view-all p {
+        font-size: 14px;
+    }
+
+    .view-all p::after {
+        transform: scale(1.2);
+    }
+
+    .shop-lvp-gallery a:nth-child(n+5):nth-child(-n+8) {
+        margin-top: 0;
+    }
+
+    .shop-lvp-gallery img {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .lvp-floors {
+        padding-top: 20px;
+    }
+
     .brands {
         width: 100%;
         height: auto;
@@ -1276,13 +1460,13 @@ h6 {
     }
 
     .wrapper-nav-second-menu {
-        height: 90px;
-        margin-top: 8px;
+        height: auto;
+        margin-top: 30px;
     }
 
     .wrapper-nav-second-menu ul {
         flex-wrap: wrap;
-        line-height: 2;
+        line-height: 4;
     }
 
     .wrapper-nav-second-menu a {
@@ -1325,11 +1509,13 @@ h6 {
     }
 
     .wrapper-flooring-options h2 {
+        margin-top: 30px;
         font-size: 42px;
     }
 
     .wrapper-flooring-options {
         height: auto;
+        margin-bottom: 20px;
     }
 
     .container-process-works {
@@ -1352,7 +1538,7 @@ h6 {
     }
 
     .for-all h3 {
-        margin-top: 0;
+        margin-top: 40px;
         font-size: 32px;
     }
 
