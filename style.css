@@ -1312,7 +1312,7 @@ h6 {
 
 .icon-list li::before {
     margin-right: 20px;
-    content: url('/images/Icon-location2.png');
+    content: url('images/Icon-location2.png');
 }
 
 .view-all {
@@ -1337,7 +1337,7 @@ h6 {
     height: 20px;
     width: 20px;
     margin-left: 8px;
-    content: url('/images/Vector.png');
+    content: url('images/Vector.png');
     transform: scale(1.4);
     display: inline-block;
 }
